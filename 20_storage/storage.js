@@ -128,5 +128,23 @@ console.log(sessionStorage.getItem('str2'));
 
 //Activity 5:
 //Task 9:
+let local = "This is Local Storage.";
+let session = "This is Session Storage";
+
+localStorage.setItem("local", local);
+sessionStorage.setItem("session", session);
+
+let getLocal = localStorage.getItem('local');
+let getSession = sessionStorage.getItem('session');
+
+console.log(getLocal);
+console.log(getSession);
 
 //Task 10:
+
+function clearStorage() {
+    localStorage.clear();
+    sessionStorage.clear();
+  }
+
+  clearStorage();
